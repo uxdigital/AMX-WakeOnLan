@@ -46,9 +46,6 @@ MODULE_NAME='Wake On Lan' (DEV controllerDevice, DEV ipDevice)
 (*                                                                             *)
 (*******************************************************************************)
 
-#DEFINE DEBUG FALSE // Set to TRUE to enable debugging from Core Library Modules
-
-
 (*******************************************************************************)
 (*  IMPORT CORE LIBRARY HERE                                                   *)
 (*  This is includes generic functions and code which can be re-used in main   *)
@@ -59,7 +56,11 @@ MODULE_NAME='Wake On Lan' (DEV controllerDevice, DEV ipDevice)
 (*                                                                             *)
 (*******************************************************************************)
 #DEFINE CORE_LIBRARY
+//#DEFINE DEBUG
 #INCLUDE 'Core Library'
+#INCLUDE 'Core Debug'
+#INCLUDE 'SNAPI'
+
 
 DEFINE_VARIABLE
 
